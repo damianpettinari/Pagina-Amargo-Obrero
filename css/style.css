@@ -1,3 +1,7 @@
+body {
+  color: #333;
+}
+
 header {
   height: 110px;
   background: #d84c2c;
@@ -31,14 +35,41 @@ nav ul li a {
   text-align: right;
 }
 
-.splash .col-md-6 {
-  text-align: right;
+.splash .col-8 {
+  text-align: left;
 }
 
 .splash h1 {
-  margin-top: 100px;
   font-family: "Alfa Slab One", cursive;
   text-transform: uppercase;
   color: white;
   font-size: 40px;
+  background: #d84c2c;
+  display: inline-block;
+  padding: 5px;
 }
+.texto {
+  margin-top: 40vh;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.espacios {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.content {
+  padding: 10px;
+}
+
+.card .btn {
+  float: center;
+  background: #d84c2c;
+  border-color: #d84c2c;
+}
+.espacio-abajo {
+  padding-bottom: 20px;
+}
+
