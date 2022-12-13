@@ -17,6 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Zilla+Slab+Highlight:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/d83f33a96e.js"
       crossorigin="anonymous"
@@ -34,13 +40,13 @@
         /></a>
         <ul>
           <li>
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="#historia" class="nav-link">Historia</a>
           </li>
           <li>
-            <a href="nosotros.html" class="nav-link">Nosotros</a>
+            <a href="#comprar" class="nav-link">Comprar</a>
           </li>
           <li>
-            <a href="contacto.html" class="nav-link">Contacto</a>
+            <a href="#contactanos" class="nav-link">Contactanos</a>
           </li>
         </ul>
       </nav>
@@ -58,18 +64,28 @@
         </div>
       </div>
     </section>
-    <section class="descripcion espacios">
+    <section class="historia espacios" id="historia">
       <div class="container">
         <div class="row">
           <div class="col-md-12 centrado">
-            <h2>Suave, ligero y herbal</h2>
+            <h2>Historia</h2>
             <div class="row">
-              <div class="col-md-2"></div>
-              <div class="col-md-8">
+              <div class="col-md-2">
+                <img src="./img/etiqueta.jpg" class="img-fluid" alt="..." />
+              </div>
+              <div class="col-md-10">
                 <p>
                   Amargo Obrero nació en 1887 en Rosario como una reacción a las
                   bebidas dulces que tomaban las clases burguesas. De ahí su
                   nombre.
+                </p>
+                <p>
+                  La etiqueta de Amargo Obrero hace alusión a las raíces del
+                  movimiento obrero con el puño en alto que festeja la dicha del
+                  trabajo y el sol de fondo como señal del nacimiento de una
+                  nueva nación. Asimismo, allí conviven la industria, la
+                  agricultura y la ganadería; principales fuentes de trabajo de
+                  nuestra nación.
                 </p>
               </div>
             </div>
@@ -77,7 +93,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="comprar">
       <div class="row espacios">
         <div class="col-md-4">
           <div class="card espacio-abajo centrado">
@@ -133,8 +149,11 @@
         <div class="row">
           <div class="col-md-2"></div>
           <div class="col-md-8 centrado">
-            <h4>
+            <h3>
               <i class="fa-solid fa-martini-glass-citrus"></i>
+              Suave, ligero y herbal
+            </h3>
+            <h4>
               Presente el picor de la nota alcohólica, combinando
               simultáneamente dulzor y amargor en el equilibrio justo.
               Graduación alcohólica: 19%.
@@ -143,7 +162,7 @@
         </div>
       </div>
     </section>
-    <section class="youtube">
+    <section class="youtube" id="video">
       <div class="container">
         <div class="ratio ratio-16x9">
           <iframe
@@ -158,20 +177,20 @@
         </div>
       </div>
     </section>
-    <section class="formulario">
+    <section class="formulario" id="contactanos">
       <div class="container espacios">
         <div class="row">
           <div class="col-md-2"></div>
           <div class="col-md-8">
             <h3 class="centrado">Contactanos</h3>
             <br />
-            <form>
+            <form id="form">
               <div class="mb-3">
-                <label for="exampleInputName" class="form-label">Nombre</label>
+                <label for="email" class="form-label">Nombre</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleInputName"
+                  id="email"
                   aria-describedby="emailHelp"
                   placeholder="Ingresar nombre"
                 />
@@ -184,6 +203,8 @@
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Ingresar email"
+                  pattern="^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)$"
+                  required
                 />
               </div>
               <div class="form-floating">
@@ -195,7 +216,7 @@
                 <label for="floatingTextarea">Envianos tu consulta</label>
               </div>
               <br />
-              <button type="submit" id="btnform" class="btn btn-success">
+              <button type="submit" id="submit" class="btn btn-success">
                 ENVIAR
               </button>
             </form>

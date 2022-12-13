@@ -4,25 +4,26 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
+  font-family: "Work Sans", sans-serif;
 }
 
 header {
-  height: 110px;
+  height: 80px;
   background: #d84c2c;
   position: sticky;
   top: 0;
   z-index: 999;
 }
 #header-img {
-  width: 200px;
+  width: 140px;
   padding-top: 10px;
 }
 
 nav ul {
   float: right;
   margin-right: 20px;
-  padding: 30px;
-  font-family: "Zilla Slab Highlight", cursive;
+  padding: 20px;
+  font-family: "Zilla Slab Highlight", cursive !important;
 }
 nav ul li {
   display: inline-block;
@@ -48,7 +49,7 @@ nav ul li a {
 }
 
 .splash h1 {
-  font-family: "Alfa Slab One", cursive;
+  font-family: "Alfa Slab One", cursive !important;
   text-transform: uppercase;
   color: white;
   font-size: 40px;
@@ -66,7 +67,7 @@ nav ul li a {
 
 .espacios {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 .content {
   padding: 10px;
@@ -94,7 +95,7 @@ i {
 .youtube {
   background: #f2f2f2;
 }
-#btnform {
+#submit {
   background: #d84c2c;
   border-color: #d84c2c;
 }
@@ -108,4 +109,15 @@ footer {
 footer a {
   text-decoration: none;
   color: white;
+}
+footer i {
+  color: white;
+}
+
+.historia p {
+  font-size: 23px;
+  text-align: justify;
+}
+.historia h2 {
+  padding-bottom: 20px;
 }
