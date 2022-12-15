@@ -31,7 +31,7 @@
   </head>
   <body>
     <header ID="header">
-      <nav id="nav-bar" class="nav-link">
+      <nav id="nav-bar">
         <a href="index.html"
           ><img
             id="header-img"
@@ -162,10 +162,11 @@
         </div>
       </div>
     </section>
-    <section class="youtube" id="video">
+    <section class="youtube">
       <div class="container">
         <div class="ratio ratio-16x9">
           <iframe
+            id="video"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/iM89iDQ7jcw"
@@ -184,23 +185,24 @@
           <div class="col-md-8">
             <h3 class="centrado">Contactanos</h3>
             <br />
-            <form id="form">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
               <div class="mb-3">
-                <label for="email" class="form-label">Nombre</label>
+                <label for="name" class="form-label">Nombre</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="email"
+                  id="name"
                   aria-describedby="emailHelp"
                   placeholder="Ingresar nombre"
                 />
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <label for="email" class="form-label">Email</label>
                 <input
+                  name="email"
                   type="email"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="email"
                   aria-describedby="emailHelp"
                   placeholder="Ingresar email"
                   pattern="^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)$"
@@ -216,9 +218,12 @@
                 <label for="floatingTextarea">Envianos tu consulta</label>
               </div>
               <br />
-              <button type="submit" id="submit" class="btn btn-success">
-                ENVIAR
-              </button>
+              <input
+                type="submit"
+                id="submit"
+                class="btn btn-success"
+                value="ENVIAR"
+              />
             </form>
           </div>
         </div>
