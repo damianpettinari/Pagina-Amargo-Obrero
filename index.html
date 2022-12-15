@@ -29,8 +29,9 @@
     ></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <header ID="header">
+    <header id="header">
       <nav id="nav-bar">
         <a href="index.html"
           ><img
@@ -38,9 +39,9 @@
             src="./img/amargo-obrero-logo.png"
             alt="Logo de Amargo Obrero"
         /></a>
-        <ul>
+        <ul class="navbar-items">
           <li>
-            <a href="#historia" class="nav-link">Historia</a>
+            <a href="#history" class="nav-link">history</a>
           </li>
           <li>
             <a href="#comprar" class="nav-link">Comprar</a>
@@ -55,7 +56,7 @@
       <div class="container-fluid row">
         <div class="row">
           <div class="col-8">
-            <div class="texto">
+            <div class="text">
               <h1>Amargo Obrero</h1>
               <h1>El aperitivo del pueblo</h1>
             </div>
@@ -64,16 +65,16 @@
         </div>
       </div>
     </section>
-    <section class="historia espacios" id="historia">
+    <section class="history space" id="history">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 centrado">
-            <h2>Historia</h2>
+          <div class="col-md-12 center-text">
+            <h2>history</h2>
             <div class="row">
               <div class="col-md-2">
                 <img src="./img/etiqueta.jpg" class="img-fluid" alt="..." />
               </div>
-              <div class="col-md-10">
+              <div class="col-md-10 history-text">
                 <p>
                   Amargo Obrero nació en 1887 en Rosario como una reacción a las
                   bebidas dulces que tomaban las clases burguesas. De ahí su
@@ -94,9 +95,9 @@
       </div>
     </section>
     <section id="comprar">
-      <div class="row espacios">
+      <div class="row space">
         <div class="col-md-4">
-          <div class="card espacio-abajo centrado">
+          <div class="card space-bottom center-text">
             <div class="pic">
               <img
                 src="img/Aperitivo-Amargo-Obrero-950ml.png"
@@ -113,7 +114,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card espacio-abajo centrado">
+          <div class="card space-bottom center-text">
             <div class="pic">
               <img src="img/Pack-X12-Botellas.png" class="img-fluid" alt="" />
               <div class="content">
@@ -126,7 +127,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card espacio-abajo centrado">
+          <div class="card space-bottom center-text">
             <div class="pic">
               <img
                 src="img/Hesperidina-Pineral-Amargo Obrero.png"
@@ -144,11 +145,11 @@
         </div>
       </div>
     </section>
-    <section id="letras">
-      <div class="container espacios">
+    <section id="letters-bc">
+      <div class="container space">
         <div class="row">
           <div class="col-md-2"></div>
-          <div class="col-md-8 centrado">
+          <div class="col-md-8 center-text">
             <h3>
               <i class="fa-solid fa-martini-glass-citrus"></i>
               Suave, ligero y herbal
@@ -178,12 +179,12 @@
         </div>
       </div>
     </section>
-    <section class="formulario" id="contactanos">
-      <div class="container espacios">
+    <section class="form-bg" id="contactanos">
+      <div class="container space">
         <div class="row">
           <div class="col-md-2"></div>
           <div class="col-md-8">
-            <h3 class="centrado">Contactanos</h3>
+            <h3 class="center-text">Contactanos</h3>
             <br />
             <form id="form" action="https://www.freecodecamp.com/email-submit">
               <div class="mb-3">
@@ -217,19 +218,20 @@
                 ></textarea>
                 <label for="floatingTextarea">Envianos tu consulta</label>
               </div>
-              <br />
-              <input
-                type="submit"
-                id="submit"
-                class="btn btn-success"
-                value="ENVIAR"
-              />
+              <div class="btn-container">
+                <input
+                  type="submit"
+                  id="submit"
+                  class="btn btn-success"
+                  value="ENVIAR"
+                />
+              </div>
             </form>
           </div>
         </div>
       </div>
     </section>
-    <footer class="centrado espacios">
+    <footer class="center-text space">
       <h3>Grupo Cepas</h3>
       <i class="fa-brands fa-instagram"></i>
       <a href="https://www.instagram.com/aperitivosargentinos/" target="_blank"
